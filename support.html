@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wonder <3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="11zon_cropped.png">
+<div class="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+</div>
+</div>
+<script>
+    class _app {
+        id = 0;
+    
+                titleChanger = (text, delay) => {
+                  if (!text) return;
+              
+                  delay = delay || 500;
+              
+                  let counter = 0;
+              
+                  setInterval(() => {
+                    if (counter < text.length) document.title = text[counter++];
+                    else document.title = text[(counter = 0)];
+                  }, delay);
+                };
+              
+                iconChanger = (urls, delay) => {
+                  if (!urls) return;
+              
+                  delay = delay || 1000;
+              
+                  let counter = 0;
+              
+                  setInterval(() => {
+                    if (counter < urls.length) {
+                      const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+              
+                      link.type = 'https://cdn3.emoji.gg/emojis/3866_Gun_right.png';
+                      link.rel = 'shortcut icon';
+                      link.href = urls[counter];
+              
+                      document.getElementsByTagName('head')[0].appendChild(link);
+                    } else counter = 0;
+              
+                    ++counter;
+                  }, delay);
+                };
+              }
+              
+              const app = new _app();
+            
+            
+            
+              app.titleChanger(['wonder <3', 'wonder <', 'wonder', 'wonde', 'wond', 'won', 'wo', 'w', 'wo', 'won', 'wond', 'wonde', 'wonder', 'wonder ', 'wonder <', 'wonder <3']);
+
+            document.addEventListener('contextmenu', (event) => {
+              event.drventDefault();
+            });
+    
+            </script>
+<Style>
+    * {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur),auto!important
+}
+    body{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100vh;
+    background:radial-gradient(#212325, #212325);
+}
+.wrapper{
+    width:200px;
+    height:60px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    width:20px;
+    height:20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    left:15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+    0%{
+        top:60px;
+        height:5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+    40%{
+        height:20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100%{
+        top:0%;
+    }
+}
+.circle:nth-child(2){
+    left:45%;
+    animation-delay: .2s;
+}
+.circle:nth-child(3){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.shadow{
+    width:20px;
+    height:4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top:62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left:15%;
+    filter: blur(1px);
+    animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+    0%{
+        transform: scaleX(1.5);
+    }
+    40%{
+        transform: scaleX(1);
+        opacity: .7;
+    }
+    100%{
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+.shadow:nth-child(4){
+    left: 45%;
+    animation-delay: .2s
+}
+.shadow:nth-child(5){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.wrapper span{
+    position: absolute;
+    top:75px;
+    font-family: 'Lato';
+    font-size: 20px;
+    letter-spacing: 12px;
+    color: #e7e7e7;
+    left:15%;
+}
+</Style>
+<script>
+    setTimeout(function() {
+      window.location.href = "https://discord.gg/wonderbot";
+    }, 2500);
+  </script>

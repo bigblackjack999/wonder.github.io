@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wonder <3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./11zon_cropped.png">
+    
+    <script>
+        class _app {
+            id = 0;
+        
+                    titleChanger = (text, delay) => {
+                      if (!text) return;
+                  
+                      delay = delay || 500;
+                  
+                      let counter = 0;
+                  
+                      setInterval(() => {
+                        if (counter < text.length) document.title = text[counter++];
+                        else document.title = text[(counter = 0)];
+                      }, delay);
+                    };
+                  
+                    iconChanger = (urls, delay) => {
+                      if (!urls) return;
+                  
+                      delay = delay || 1000;
+                  
+                      let counter = 0;
+                  
+                      setInterval(() => {
+                        if (counter < urls.length) {
+                          const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                  
+                          link.type = 'https://cdn3.emoji.gg/emojis/3866_Gun_right.png';
+                          link.rel = 'shortcut icon';
+                          link.href = urls[counter];
+                  
+                          document.getElementsByTagName('head')[0].appendChild(link);
+                        } else counter = 0;
+                  
+                        ++counter;
+                      }, delay);
+                    };
+                  }
+                  
+                  const app = new _app();
+                
+                
+                
+                  app.titleChanger(['wonder <3', 'wonder <', 'wonder', 'wonde', 'wond', 'won', 'wo', 'w', 'wo', 'won', 'wond', 'wonde', 'wonder', 'wonder ', 'wonder <', 'wonder <3']);
+
+
+                document.addEventListener('contextmenu', (event) => {
+                  event.drventDefault();
+                });
+        
+                </script>
+    
+    <div class="gems" aria-hidden="true">
+
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+        *
+        </div>
+        <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+          <div class="gem">
+          *
+          </div>
+      </div>
+	<style>
+body {
+  overflow: hidden;
+}
+        @font-face {
+  font-family: 'MotleyForces';
+  src: url('./MotleyForcesRegular-w1rZ3.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cute Aurora';
+  src: url('./CuteAurora-PK3lZ.ttf') format('truetype');
+}
+
+.gem {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes gems-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes gems-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes gems-fall{0%{top:-10%}100%{top:100%}}@keyframes gems-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.gem{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:gems-fall,gems-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:gems-fall,gems-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.gem:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.gem:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.gem:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.gem:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.gem:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.gem:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.gem:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.gem:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.gem:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.gem:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+.demo {
+    font-family: 'MotleyForces', sans-serif;
+	color:#c0c0c0;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+    font-family: 'MotleyForces', sans-serif;
+color: #000;		
+}
+* {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur),auto!important
+}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 100vh;
+			background-color: #212325;
+		}
+
+		#icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			background-image: url(./fe006f044e7e4ef1542d135e91ce3868.png);
+			background-size: cover;
+			background-position: center;
+			margin-bottom: 20px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		}
+        #icon:hover {
+            transform: scale(1.05);
+        }
+
+		.btn-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.btn {
+			background-color: #e7e7e7;
+			color: #000;
+			padding: 10px 16px 10px 50px;
+			border: none;
+			border-radius: 70px;
+			cursor: pointer;
+			margin: 10px;
+			font-size: 16px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+			letter-spacing: 1px;
+			transition: transform 0.2s ease-in-out;
+			position: relative;
+			overflow: hidden;
+            font-family: 'MotleyForces', sans-serif;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+            color:#c0c0c0
+		}
+
+		.btn i {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+			color: #000;
+		}
+
+		.btn.invite i {
+			color: #000;
+            font-size: 20px;
+		}
+        .btn.invite:hover i {
+            color: #c0c0c0
+        }
+
+		.btn.support i {
+			color: #000;
+            font-size: 20px;
+		}
+        .btn.support:hover i {
+            color: #c0c0c0;
+        }
+
+		.btn.cmds i {
+			color: #000;
+            font-size: 20px;
+		}
+        .btn.cmds:hover i {
+            color: #c0c0c0;
+        }
+        footer {
+color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Cute Aurora', sans-serif;
+}
+#author:hover {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+#icon-text {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Cute Aurora', sans-serif;
+    }
+	</style>
+</head>
+
+<body>
+  
+	<div id="icon"></div>
+	<div class="btn-container">
+    <a href="invite.html"><button class="btn invite"><i class="fas fa-user-plus"></i>invite</button></a>
+    <a href="support.html"><button class="btn support"><i class="fab fa-discord"></i>support</button></a>
+    <a href="commands.html"><button class="btn cmds"><i class="fas fa-terminal"></i>cmds</button></a>
+	</div>
+</body>
+<footer>
+  <p>Made with ❤️ by <a id="author" href="https://discord.gg/puffcord" target="_blank">logger#0001</a></p>
+</footer>
+
+<style>
+  #author {
+    text-decoration: none; 
+    cursor: pointer; 
+    color: inherit; 
+  }
+</style>
+
+
+</html>
