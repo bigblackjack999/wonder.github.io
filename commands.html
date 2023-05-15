@@ -3,8 +3,6 @@
     </body>
 <div style="white-space:pre;">
 default prefix: $ | support server: https://discord.gg/wonderbot | [] is optional and <> is required
-┌── afk
-|    ├──  afk: 
 ┌── autoresponder
 |    ├──  autoresponder[ar]: Manage the server's autoresponders
 |    |   ├── autoresponder delete[remove]: Delete an autoresponder trigger
@@ -103,11 +101,13 @@ default prefix: $ | support server: https://discord.gg/wonderbot | [] is optiona
 |    |   ├── starboard clear: Reset the starboard configuration
 |    |   ├── starboard show[list]: View a list of starboard channels, emojis, & threshold
 |    |   ├── starboard add: Add a starboard channel, emoji, & threshold
+|    |   ├── starboard remove: Remove a starboard channel
 ┌── usernames
 |    ├──  tags[discrims|discriminators]: View a list of 0001 tags
 |    ├──  pastusernames[names|usernames]: View a list of someone's username history
 |    ├──  clearnames: Clear your username history
 ┌── utility
+|    ├──  afk: Mark yourself as AFK
 |    ├──  snipe[s]: View the most recently deleted message
 |    ├──  serverinfo[si|server]: View some information the server
 |    ├──  vanitychecker[vanitycheck|vanity]: Check if a vanity is available
@@ -154,15 +154,43 @@ default prefix: $ | support server: https://discord.gg/wonderbot | [] is optiona
 |    ├──  bans: View a list of the server's bans
 |    ├──  cryptocurrency[crypto]: View a cryptocurrency's price
 |    ├──  invites: View a list of the server's invites
+|    ├──  hex: View information on a hex code
+|    ├──  firstmessage: View the channel's first message
+|    ├──  aboutme[bio]: View a user's about me
+|    ├──  copyembed: Copy an embed's code
+|    ├──  timezone[tz]: Manage your timezone
+|    |   ├── timezone set: Set your timezone
+|    |   ├── timezone reset: Unset your timezone
+|    ├──  dominantcolor: Get the dominant color of an image
+|    ├──  github: View some information on a Github user
+|    ├──  translate: Translate some text
+|    ├──  valorant: View some information on a valorant player
+|    ├──  roblox: View information on Roblox users or groups
+|    |   ├── user: View information on a Roblox user
+|    |   ├── group: View information on a Roblox group
+|    ├──  xbox: View information on an Xbox player
+|    ├──  movie: View information on a movie
+|    ├──  bmi: Get your BMI
 ┌── voicemaster
 |    ├──  voicemaster[vm|vc]: Manage the server's voicemaster interface
 |    |   ├──  voicemaster setup: Set up the voicemaster interface
-|    |   ├──  voicemaster setup: Disable the voicemaster interface
+|    |   ├──  voicemaster reset: Disable the voicemaster interface
+|    |   ├──  voicemaster claim: Claim an inactive voice channel
+|    |   ├──  voicemaster ghost: Hide your voice channel
+|    |   ├──  voicemaster unghost: Reveal your voice channel
+|    |   ├──  voicemaster limit: Set a user limit for your voice channel
+|    |   ├──  voicemaster lock: Lock your voice channel
+|    |   ├──  voicemaster unlock: Unlock your voice channel
+|    |   ├──  voicemaster name: Rename your voice channel
+|    |   ├──  voicemaster permit: Permit a user's access to your voice channel
+|    |   ├──  voicemaster reject: Reject a user's access to your voice channel
+|    |   ├──  voicemaster unghost
 ┌── welcome
 |    ├──  welcome[welc]: Manage the server's welcome messages 
 |    |   ├── welcome show[list]: View a list of the server's welcome messages
 |    |   ├── welcome add: Add a welcome channel with a custom message
 |    |   ├── welcome clear: Clear all welcome channels and messages
+|    |   ├── welcome remove: Remove a welcome channel
 |    |   ├── welcome test: Test welcome messages
 </div>
   </html>
